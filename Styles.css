@@ -5,15 +5,15 @@ body {
     background-color: #f4f4f4;
 }
 
-/* En-tête avec image de fond et semi-transparence */
+/* En-tête avec images défilantes */
 header {
-    background-image: url('https://via.placeholder.com/1920x400'); /* Remplacer cette URL par ton image */
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
     padding: 100px 20px;
     position: relative;
+    animation: slideBackground 15s infinite; /* L'animation défile toutes les 15 secondes */
 }
 
 /* Overlay (semi-transparence) pour améliorer la lisibilité du titre */
@@ -34,6 +34,22 @@ header h1 {
     font-size: 3.5em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ombre pour mieux distinguer le texte */
     margin: 0;
+}
+
+/* Animation pour faire défiler les images d'arrière-plan */
+@keyframes slideBackground {
+    0% {
+        background-image: url('https://i.ytimg.com/vi/cxUzbz9c9d8/maxresdefault.jpg');
+    }
+    33% {
+        background-image: url('https://www.equinoxmagazine.fr/wp-content/uploads/2023/11/poulet-dg.jpeg');
+    }
+    66% {
+        background-image: url('https://reglo.org/admin/posts_images/5650_6_2016-09-05la-formule-bhb-beignets-haricot-bouillie.jpg');
+    }
+    100% {
+        background-image: url('https://cuisinedumboa.com/wp-content/uploads/2019/03/FB_IMG_15307324283946846-1.jpg');
+    }
 }
 
 /* Bouton pour voir le menu */
