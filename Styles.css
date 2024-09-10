@@ -38,7 +38,7 @@ header h1 {
 
 /* Animation pour faire défiler les images d'arrière-plan */
 @keyframes slideBackground {
-    0% {
+    10% {
         background-image: url('https://i.ytimg.com/vi/cxUzbz9c9d8/maxresdefault.jpg');
     }
     33% {
@@ -57,7 +57,7 @@ header h1 {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: #e67e22;
+    background-color: #22e67786;
     color: white;
     font-size: 1.2em;
     text-transform: uppercase;
@@ -70,7 +70,7 @@ header h1 {
 }
 
 .menu-button:hover, .call-button:hover {
-    background-color: #d35400;
+    background-color: #001cd36b;
 }
 
 .call-button {
